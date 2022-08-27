@@ -3,8 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.d-flex input{
+    margin: .8rem 0em;
+}
+
+.d-flex button{
+    margin:1rem;
+    padding: .5rem 2rem;
+}
+
+.container table{
+    margin: 1em 12em;
+}
+.btnedit{
+    color: lightgreen;
+    cursor: pointer;
+}
+.btndelete{
+    color: red;
+    cursor: pointer;
 }
