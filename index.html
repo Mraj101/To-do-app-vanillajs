@@ -4,13 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do app</title>
+    <title>Crud Basic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/13d82a9505.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <div class="container">
-        <div class="to-do">
-            
-        </div>
+    <div class="container text-center">
+        <h1 class="bg-light py-4 text-info"><i class="fa-solid fa-plug"></i>Electronic Store</h1>
     </div>
+    <div class="d-flex justify-content-center">
+      <form class="w-50">
+
+        <input type="text" id="userid" class="form-control" placeholder="ID" readonly autocomplete="off">
+        <input type="text" id="productname" class="form-control" placeholder="productname" autocomplete="off">
+        <div class="row">
+          <div class="col">
+            <input type="text" id="seller" class="form-control m-0" placeholder="seller" autocomplete="off">
+          </div>
+          <div class="col">
+            <input type="text" id="price" class="form-control m-0" placeholder="price" autocomplete="off">
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- create,update,read,delete -->
+    <div class="container d-flex justify-content-center w-70">
+      <button class="btn btn-success">
+        create
+      </button>
+      <button class="btn btn-primary">
+        read
+      </button>
+      <button class="btn btn-warning">
+        update
+      </button>
+      <button class="btn btn-danger">
+        delete
+      </button>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">Products</th>
+            <th scope="col">seller</th>
+            <th scope="col">price</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td><i class="fa-solid fa-pen-to-square btnedit"></i></td>
+            <td><i class="fa-solid fa-trash-can btndelete"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td><i class="fa-solid fa-pen-to-square btnedit"></i></td>
+            <td><i class="fa-solid fa-trash-can btndelete"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>sdfsdf</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td><i class="fa-solid fa-pen-to-square btnedit"></i></td>
+            <td><i class="fa-solid fa-trash-can btndelete"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
