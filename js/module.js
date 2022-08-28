@@ -1,5 +1,4 @@
-//creating a hardcoded db 
-
+//creating a hardcoded db
 
 /*var db=new Dexie("myDB");
 db.version(1).stores({
@@ -7,13 +6,13 @@ db.version(1).stores({
 });
 db.open();*/
 
+// by creating a pure funtion
+const productdb = (dbName, tableName) => {
+  const db = new Dexie(dbName);
+  db.version(1).stores(tableName);
+  db.open();
 
-
-// by creating a pure funtion 
-const productdb=(dbName,tableName)=>{
-    const db=new Dexie(dbName);
-db.version(1).stores(tableName);
-db.open();
-}
+  return db;
+};
 
 export default productdb;
