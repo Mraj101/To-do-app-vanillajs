@@ -7,12 +7,14 @@ db.version(1).stores({
 db.open();*/
 
 // by creating a pure funtion
-const productdb = (dbName, tableName) => {
+export const productdb = (dbName, tableName) => {
   const db = new Dexie(dbName);
-  db.version(1).stores(tableName);
+  db.version(10).stores(tableName);
   db.open();
 
   return db;
 };
 
-export default productdb
+export const sum=()=>{
+    return 1+2;
+}
