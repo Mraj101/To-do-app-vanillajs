@@ -1,5 +1,5 @@
-import productdb from "./module";
+import productdb from "./module.js"
 
-productdb("Productdb", {
+productdb("productdb", {
   products: `++id,name,seller,price`,
 });

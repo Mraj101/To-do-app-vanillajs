@@ -15,4 +15,4 @@ const productdb = (dbName, tableName) => {
   return db;
 };
 
-export default productdb;
+export default productdb
