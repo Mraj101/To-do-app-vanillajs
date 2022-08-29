@@ -15,6 +15,3 @@ export const productdb = (dbName, tableName) => {
   return db;
 };
 
-export const sum=()=>{
-    return 1+2;
-}
